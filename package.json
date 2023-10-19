@@ -1,22 +1,27 @@
 {
-  "name": "seepass-js",
+  "name": "ssr-og-js",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-on-netlify"
   },
   "dependencies": {
+    "next": "13.5.6",
+    "next-on-netlify": "^3.0.1",
+    "next-seo": "^6.1.0",
     "react": "^18",
+    "react-bootstrap": "^2.9.0",
     "react-dom": "^18",
-    "next": "13.5.6"
+    "styled-components": "^6.1.0"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
-    "@types/react-dom": "^18"
+    "@types/react-dom": "^18",
+    "typescript": "^5"
   }
 }
